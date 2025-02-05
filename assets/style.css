@@ -24,8 +24,10 @@ body{
 .section1{
     padding: 40px;
     background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-    border-radius: 25px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
     justify-items: center;
+    text-align: center;
     height: 40vh;
  
     
@@ -132,6 +134,7 @@ body{
         background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
         border-radius: 25px;
         justify-items: center;
+        text-align: center;
         width: 40vb;
     
         
@@ -147,7 +150,7 @@ body{
         color: white; font-size: 30px; margin-bottom: 20px; font-weight: 600;
     }
     .sec1-p3{
-        border: 1px solid black; text-align: center; font-weight: 600;
+        text-align: center; font-weight: 600;
     }
     .section1 p{
         font-family: "Hanken Grotesk", sans-serif;
