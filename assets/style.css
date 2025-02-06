@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: "Hanken Grotesk";
@@ -10,16 +11,132 @@
 body{
     background-color: hsl(221, 100%, 96%);
     justify-items: center;
-    place-content: center;
     min-height: 100vh;
+    place-content: center;
+}
+
+@media screen and (min-width: 376px ) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #ffff;
+        width: 900px;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        border-radius: 25px;
+        align-items: center;
+        text-align: center;
+        /* width: 40vb; */
+    
+        
+    }
+    .sec1-p1{
+        font-family: "Hanken Grotesk",sans-serif;
+        font-weight: 600;
+        color: hsl(241, 100%, 89%);
+        font-size: 27px;
+        margin-bottom: 30px; 
+    }
+    .sec1-p2{
+        color: white; font-size: 30px; margin-bottom: 20px; font-weight: 600;
+    }
+    .sec1-p3{
+        text-align: center; font-weight: 600;
+    }
+    .section1 p{
+        font-family: "Hanken Grotesk", sans-serif;
+        color: hsl(241, 100%, 89%);
+        justify-content: center;
+    }
+    .circle-container{
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle-p1{
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: 70px; font-weight: 800; color: white;
+    }
+    .circle-p2{
+        font-family: "Hanken Grotesk", sans-serif;
+        font-weight: 400;
+    
+    }
+    
+    .section2{
+        padding: 30px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+        /* width: 40vb; */
+    }
+    .section2 span{
+        color: hsl(240, 3%, 47%);
+    }
+    .sec2-heading{
+        font-family: "Hanken Grotesk", sans-serif; font-size: 25px; font-weight: 600;  margin-bottom: 30px;
+    }
+    .sec2-div1{
+        font-family: "Hanken Grotesk", sans-serif; padding: 20px; background-color: hsla(0, 100%, 67%, 0.1); display: flex; justify-content: space-between; margin-bottom: 20px; border-radius: 10px;
+    }
+    .sec2-div2{
+        font-family: "Hanken Grotesk", sans-serif; background-color: hsla(39, 100%, 56%, 0.1); padding: 20px;  display: flex; justify-content: space-between; margin-bottom: 20px; border-radius: 10px;
+    }
+    .sec2-div3{
+        font-family: "Hanken Grotesk", sans-serif; padding: 20px; background-color: hsla(166, 100%, 37%, 0.1); display: flex; justify-content: space-between; margin-bottom: 20px; border-radius: 10px;
+    }
+    .sec2-div4{
+        font-family: "Hanken Grotesk", sans-serif; padding: 20px; background-color: hsla(234, 85%, 45%, 0.1); display: flex; justify-content: space-between; margin-bottom: 30px; border-radius: 10px;
+    }
+    .sec2-con{
+        display: flex;
+    }
+    .sec2-div-con{
+        font-weight: 600; padding-left: 10px;
+    }
+    .sec2-div1-color{
+        color: hsl(0, 100%, 67%); 
+    }
+    .sec2-div2-color{
+        color: hsl(39, 100%, 56%);
+    }
+    .sec2-div3-color{
+        color:hsl(166, 100%, 37%);
+    }
+    .sec2-div4-color{
+        color: hsl(234, 85%, 45%);
+    }
+    .sec2-number{
+        font-weight: 400;
+    }
+    .sec2-btn{
+        padding: 20px; width: 100%; border-radius: 30px; background-color: hsl(224, 30%, 27%); color: white; font-weight: 800;
+    }
+    .sec2-btn:hover{
+        background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    }
 }
 
 @media screen and (max-width: 375px) {
     
 .container{
-    display: grid;
-    grid-template-rows: 0.7fr 1fr;
+    display: flex;
+    /* grid-template-rows: 0.7fr 1fr; */
+    flex-direction: column;
     background-color: #ffff;
+    justify-content: center;
 }
 .section1{
     padding: 40px;
@@ -29,7 +146,7 @@ body{
     /* justify-items: center; */
     /* text-align: center; */
     place-items: center;
-    height: 40vh;
+    /* height: 40vh; */
  
     
 }
@@ -38,7 +155,7 @@ body{
     font-weight: 600;
     color: hsl(241, 100%, 89%);
     font-size: 17px;
-    margin-bottom: 30px; 
+    margin-bottom: 10px; 
 }
 .sec1-p2{
     color: hsl(241, 100%, 89%);
@@ -59,7 +176,7 @@ body{
     width: 150px;
     height: 150px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .circle-p1{
     font-family: "Hanken Grotesk", sans-serif;
@@ -123,106 +240,3 @@ body{
 }
 }
 
-@media screen and (min-width: 376px ) {
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: #ffff;
-        width: 102vb;
-    }
-    .section1{
-        padding: 50px;
-        background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-        border-radius: 25px;
-        justify-items: center;
-        text-align: center;
-        width: 40vb;
-    
-        
-    }
-    .sec1-p1{
-        font-family: "Hanken Grotesk",sans-serif;
-        font-weight: 600;
-        color: hsl(241, 100%, 89%);
-        font-size: 27px;
-        margin-bottom: 30px; 
-    }
-    .sec1-p2{
-        color: white; font-size: 30px; margin-bottom: 20px; font-weight: 600;
-    }
-    .sec1-p3{
-        text-align: center; font-weight: 600;
-    }
-    .section1 p{
-        font-family: "Hanken Grotesk", sans-serif;
-        color: hsl(241, 100%, 89%);
-        justify-content: center;
-    }
-    .circle-container{
-        background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
-        border-radius: 100px;
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .circle-p1{
-        font-family: "Hanken Grotesk", sans-serif;
-        padding-top: 40px; font-size: 70px; font-weight: 800; color: white;
-    }
-    .circle-p2{
-        font-family: "Hanken Grotesk", sans-serif;
-        font-weight: 400;
-    }
-    
-    .section2{
-        padding: 30px;
-        border-radius: 25px;
-        width: 40vb;
-    }
-    .section2 span{
-        color: hsl(240, 3%, 47%);
-    }
-    .sec2-heading{
-        font-family: "Hanken Grotesk", sans-serif; font-size: 25px; font-weight: 600;  margin-bottom: 30px;
-    }
-    .sec2-div1{
-        font-family: "Hanken Grotesk", sans-serif; padding: 20px; background-color: hsla(0, 100%, 67%, 0.1); display: flex; justify-content: space-between; margin-bottom: 20px; border-radius: 10px;
-    }
-    .sec2-div2{
-        font-family: "Hanken Grotesk", sans-serif; background-color: hsla(39, 100%, 56%, 0.1); padding: 20px;  display: flex; justify-content: space-between; margin-bottom: 20px; border-radius: 10px;
-    }
-    .sec2-div3{
-        font-family: "Hanken Grotesk", sans-serif; padding: 20px; background-color: hsla(166, 100%, 37%, 0.1); display: flex; justify-content: space-between; margin-bottom: 20px; border-radius: 10px;
-    }
-    .sec2-div4{
-        font-family: "Hanken Grotesk", sans-serif; padding: 20px; background-color: hsla(234, 85%, 45%, 0.1); display: flex; justify-content: space-between; margin-bottom: 30px; border-radius: 10px;
-    }
-    .sec2-con{
-        display: flex;
-    }
-    .sec2-div-con{
-        font-weight: 600; padding-left: 10px;
-    }
-    .sec2-div1-color{
-        color: hsl(0, 100%, 67%); 
-    }
-    .sec2-div2-color{
-        color: hsl(39, 100%, 56%);
-    }
-    .sec2-div3-color{
-        color:hsl(166, 100%, 37%);
-    }
-    .sec2-div4-color{
-        color: hsl(234, 85%, 45%);
-    }
-    .sec2-number{
-        font-weight: 400;
-    }
-    .sec2-btn{
-        padding: 20px; width: 100%; border-radius: 30px; background-color: hsl(224, 30%, 27%); color: white; font-weight: 800;
-    }
-    .sec2-btn:hover{
-        background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-    }
-}
